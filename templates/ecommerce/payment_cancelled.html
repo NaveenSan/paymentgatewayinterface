@@ -1,0 +1,6 @@
+{#{% extends 'login/login_page.html' %}#}
+{% block content %}
+
+    <p>Payment cancelled.</p>
+    <a href="{% url 'login:donate' %}">Retry</a>
+{% endblock %}

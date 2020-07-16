@@ -1,0 +1,11 @@
+{#{% extends 'login/login_page.html' %}#}
+
+{% block title %}Make Payment{% endblock %}
+
+{% block content %}
+    Donate $50 USD
+{#    <input type="text" name="amount" class="form-control"#}
+{#                                      placeholder="Amount in USD" />#}
+    <h4>Pay with PayPal</h4>
+    {{ form.render }}
+{% endblock %}

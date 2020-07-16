@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% csrf_token %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+
+    To login to another user
+    <a href="{% url 'login:donate' %}">donate</a>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login:user_login' %}">login</a>
+{% endif %}
+{#    {% block extrahead %}{{ block.super }}#}
+{#    <script type="text/javascript">#}
+{#        setTimeout(function() {#}
+{#            window.location.href = "{% url 'login:user_login' %}";#}
+{#        }, 2000);#}
+{#    </script>#}
+{#{% endblock %}#}
+{% endblock %}
+
+{#<a href="{% url 'donate' %}">Donate</a>#}
+
+</body>
+</html>
