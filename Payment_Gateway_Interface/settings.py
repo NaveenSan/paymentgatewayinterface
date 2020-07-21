@@ -143,3 +143,4 @@ DATABASES['default'].update(db_from_env)
 
 
 STATIC_ROOT = '/'
+STATIC_URL = '/path_to_your_statics'
