@@ -131,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = 'templates/zKorona/'
+# STATIC_URL = 'templates/zKorona/'
 
 
 PAYPAL_RECEIVER_EMAIL = 'sb-7ffph2623317@business.example.com'
